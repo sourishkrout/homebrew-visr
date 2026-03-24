@@ -5,21 +5,21 @@
 class Visr < Formula
   desc "Agent UX testing - Agents Are the New Browsers"
   homepage "https://visr.dev"
-  version "0.0.1-rc.0"
+  version "0.0.1-rc.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.0/visr_0.0.1-rc.0_darwin_amd64.tar.gz"
-      sha256 "6d502a386698cf475c7183d86d7e01b3db66cd32891dfaafd699daebab2cf916"
+      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.1/visr_0.0.1-rc.1_darwin_amd64.tar.gz"
+      sha256 "6c4a789c83aac11c8df2909356d2a39bed4b7faa32ea96976da74a18cc771cb1"
 
       define_method(:install) do
         bin.install "visr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.0/visr_0.0.1-rc.0_darwin_arm64.tar.gz"
-      sha256 "5ed70fbaf2f75a386db66c73b94b431bccd527c0f8e2abb5f1f0750dcabf46a3"
+      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.1/visr_0.0.1-rc.1_darwin_arm64.tar.gz"
+      sha256 "fc5f086f23f928ea15f18a59ddae0f28b65fd468986ffaa4a90e7df08fe9474b"
 
       define_method(:install) do
         bin.install "visr"
@@ -29,15 +29,15 @@ class Visr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.0/visr_0.0.1-rc.0_linux_amd64.tar.gz"
-      sha256 "a43e2fdf37cc78a8b25425fd2952761cb8b5be91b787b1459b884a2a4d42a968"
+      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.1/visr_0.0.1-rc.1_linux_amd64.tar.gz"
+      sha256 "b8e057d9eb67c91dc0eef10339b26bddf94bc5cf89654a7338e302483bf21886"
       define_method(:install) do
         bin.install "visr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.0/visr_0.0.1-rc.0_linux_arm64.tar.gz"
-      sha256 "f7b0bdf64709bd1314cde326acab6356ea0c30e40a67ad4e3974132a84266569"
+      url "https://github.com/sourishkrout/visr/releases/download/v0.0.1-rc.1/visr_0.0.1-rc.1_linux_arm64.tar.gz"
+      sha256 "37281077bcdb7a66f56611ac20d4f48be40b0005553fa0a8c8a4ee3ec219517f"
       define_method(:install) do
         bin.install "visr"
       end
