@@ -5,21 +5,21 @@
 class Visr < Formula
   desc "Agent UX testing - Agents Are the New Browsers"
   homepage "https://visr.dev"
-  version "0.0.21"
+  version "0.0.22"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://visr-releases.s3.amazonaws.com/0.0.21/visr_0.0.21_darwin_amd64.tar.gz"
-      sha256 "4a56ab741b392670449c2d351df282d476e521a78b877b4cf2f6098181945e68"
+      url "https://visr-releases.s3.amazonaws.com/0.0.22/visr_0.0.22_darwin_amd64.tar.gz"
+      sha256 "c25311040291e639a97199716c9a7b24098fd4514aa60927905cae44198d9355"
 
       define_method(:install) do
         bin.install "visr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://visr-releases.s3.amazonaws.com/0.0.21/visr_0.0.21_darwin_arm64.tar.gz"
-      sha256 "cbf49dadc96ef77c69d500104d28bf9d438e1784f908cb65d39948b584cd0d36"
+      url "https://visr-releases.s3.amazonaws.com/0.0.22/visr_0.0.22_darwin_arm64.tar.gz"
+      sha256 "d9e4fd21b246a30448ab976003500fc3cf20c714b061db3e0f1083e0ed242146"
 
       define_method(:install) do
         bin.install "visr"
@@ -29,15 +29,15 @@ class Visr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://visr-releases.s3.amazonaws.com/0.0.21/visr_0.0.21_linux_amd64.tar.gz"
-      sha256 "6d158499135d39b9ccc763c713bc62d7115789bcede50eb600e66db5f9334b90"
+      url "https://visr-releases.s3.amazonaws.com/0.0.22/visr_0.0.22_linux_amd64.tar.gz"
+      sha256 "0c339a552b8938509c764d97c05fec7df9c30fbfc8515c83cb1363ccc5e47d21"
       define_method(:install) do
         bin.install "visr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://visr-releases.s3.amazonaws.com/0.0.21/visr_0.0.21_linux_arm64.tar.gz"
-      sha256 "5166c7a52cd9373f718608e9b08a818854f4f2dbae5d7939912f03b0ab37ae67"
+      url "https://visr-releases.s3.amazonaws.com/0.0.22/visr_0.0.22_linux_arm64.tar.gz"
+      sha256 "2364111e33dca4bc243f81ea3ca4c994cdd577498f5068d7c95e73feb9e59c37"
       define_method(:install) do
         bin.install "visr"
       end
